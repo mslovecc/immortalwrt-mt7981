@@ -14,11 +14,11 @@
 sed -i 's/192.168.1.1/192.168.0.1/g' package/base-files/files/bin/config_generate
 
 # extend TP-link firmware size
-sed -i 's/tplink-4m/tplink-8m/g' target/linux/ar71xx/image/tiny-tp-link.mk
-sed -i 's/tplink-4mlzma/tplink-8mlzma/g' target/linux/ar71xx/image/tiny-tp-link.mk
+# sed -i 's/tplink-4m/tplink-8m/g' target/linux/ar71xx/image/tiny-tp-link.mk
+# sed -i 's/tplink-4mlzma/tplink-8mlzma/g' target/linux/ar71xx/image/tiny-tp-link.mk
 
 # extend Netgear firmware size
-sed -i 's/3712k(firmware)/7808k(firmware)/g' target/linux/ar71xx/image/legacy.mk
+# sed -i 's/3712k(firmware)/7808k(firmware)/g' target/linux/ar71xx/image/legacy.mk
 
 # Fix Material theme progressbar font size
 sed -i 's/1.3em/1em/g' package/feeds/luci/luci-theme-material/htdocs/luci-static/material/cascade.css
@@ -27,9 +27,9 @@ sed -i 's/1.3em/1em/g' package/feeds/luci/luci-theme-material/htdocs/luci-static
 sed -i 's/.disabled=1/.disabled=0/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 # Set Wifi SSID and Password
-sed -i 's/.ssid=OpenWrt/.ssid=Tomato24/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
-sed -i 's/.encryption=none/.encryption=psk-mixed/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
-sed -i '/set\ wireless.default_radio${devidx}.encryption=psk-mixed/a set\ wireless.default_radio${devidx}.key=Psn@2416' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+# sed -i 's/.ssid=OpenWrt/.ssid=Tomato24/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+# sed -i 's/.encryption=none/.encryption=psk-mixed/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+# sed -i '/set\ wireless.default_radio${devidx}.encryption=psk-mixed/a set\ wireless.default_radio${devidx}.key=Psn@2416' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 # DHCP defaults
 sed -i 's/100/10/g' package/network/services/dnsmasq/files/dhcp.conf
