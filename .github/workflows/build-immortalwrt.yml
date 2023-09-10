@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build ImmortalWrt MT798x
+name: Build ImmortalWrt MT798x hanwckf
 
 on:
   repository_dispatch:
