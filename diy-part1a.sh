@@ -19,7 +19,7 @@ git fetch --tags
 git tag -l
  
 # Use OpenWrt 19.07.7 release
-git checkout v23.05.0-rc3
+git checkout v23.05.1
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
 git clone https://github.com/mslovecc/luci-theme-argon.git package/luci-theme-argon
