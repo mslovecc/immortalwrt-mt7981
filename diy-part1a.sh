@@ -22,8 +22,8 @@ git tag -l
 git checkout v23.05.1
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
-git clone https://github.com/mslovecc/luci-theme-argon.git package/luci-theme-argon
-git clone https://github.com/mslovecc/luci-app-argon-config.git package/luci-app-argon-config
+git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
 mkdir package/ming
 git clone https://github.com/mslovecc/luci-app-pushbot package/ming/luci-app-pushbot
 git clone https://github.com/mslovecc/openwrt-vlmcsd.git package/ming/openwrt-vlmcsd
